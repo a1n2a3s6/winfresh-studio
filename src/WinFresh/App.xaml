@@ -1,0 +1,43 @@
+<Application x:Class="WinFresh.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="Views/MainWindow.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="BgBase" Color="#090C10"/>
+        <SolidColorBrush x:Key="BgSurface" Color="#11161F"/>
+        <SolidColorBrush x:Key="BgElevated" Color="#161D29"/>
+        <SolidColorBrush x:Key="BorderSubtle" Color="#1E2736"/>
+        <SolidColorBrush x:Key="BorderAccent" Color="#2C3A50"/>
+        <SolidColorBrush x:Key="AccentEmerald" Color="#10B981"/>
+        <SolidColorBrush x:Key="AccentCyan" Color="#38BDF8"/>
+        <SolidColorBrush x:Key="AccentAmber" Color="#F59E0B"/>
+        <SolidColorBrush x:Key="AccentCrimson" Color="#EF4444"/>
+        <SolidColorBrush x:Key="TextPrimary" Color="#F1F5F9"/>
+        <SolidColorBrush x:Key="TextSecondary" Color="#94A3B8"/>
+        <SolidColorBrush x:Key="TextMuted" Color="#64748B"/>
+
+        <Style TargetType="ScrollBar">
+            <Setter Property="Width" Value="7"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ScrollBar">
+                        <Grid Background="Transparent">
+                            <Track x:Name="PART_Track" IsDirectionReversed="True">
+                                <Track.Thumb>
+                                    <Thumb>
+                                        <Thumb.Template>
+                                            <ControlTemplate TargetType="Thumb">
+                                                <Border Background="#263244" CornerRadius="3.5" Margin="1"/>
+                                            </ControlTemplate>
+                                        </Thumb.Template>
+                                    </Thumb>
+                                </Track.Thumb>
+                            </Track>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Application.Resources>
+</Application>
