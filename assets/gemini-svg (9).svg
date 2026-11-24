@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320">
+  <defs>
+    <style>
+      .bar1 { animation: shrinkBar 5s ease-in-out infinite; }
+      @keyframes shrinkBar {
+        0%, 20% { width: 210px; fill: #EF4444; }
+        55%, 85% { width: 76px; fill: #10B981; }
+        100% { width: 210px; fill: #EF4444; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="#090C10" stroke="#1E2736" stroke-width="2" />
+
+  
+  <rect x="2" y="2" width="218" height="316" rx="14" fill="#0E131B" />
+  <line x1="220" y1="2" x2="220" y2="318" stroke="#1E2736" />
+  <text x="24" y="38" fill="#34D399" font-family="Consolas, monospace" font-size="14" font-weight="800">⚡ WINFRESH v1.0</text>
+  <g transform="translate(16, 62)" font-family="Consolas, monospace" font-size="12" font-weight="700">
+    <rect x="0" y="0" width="188" height="32" rx="8" fill="#10B981" fill-opacity="0.16" stroke="#10B981" />
+    <text x="16" y="21" fill="#34D399">● Overview Boost</text>
+    <text x="16" y="58" fill="#94A3B8">  Deep Junk Cleaner</text>
+    <text x="16" y="92" fill="#94A3B8">  Startup Guard</text>
+    <text x="16" y="126" fill="#94A3B8">  Safe Speed Tweaks</text>
+    <text x="16" y="160" fill="#94A3B8">  RAM &amp; Processes</text>
+    <text x="16" y="194" fill="#94A3B8">  OS Repair &amp; TRIM</text>
+  </g>
+  <rect x="16" y="274" width="188" height="28" rx="6" fill="#16202C" stroke="#38BDF8" stroke-opacity="0.5" />
+  <text x="110" y="292" text-anchor="middle" fill="#38BDF8" font-family="Consolas, monospace" font-size="11" font-weight="700">↩ UNDO ALL READY</text>
+
+  
+  <g transform="translate(248, 24)" font-family="Consolas, monospace">
+    <text x="0" y="18" fill="#E2E8F0" font-size="14" font-weight="700">6 ROOT-CAUSE OPTIMIZATION ENGINES (100% REVERSIBLE)</text>
+
+    
+    <rect x="0" y="36" width="292" height="110" rx="12" fill="#11161F" stroke="#1E2736" />
+    <text x="16" y="62" fill="#34D399" font-size="12" font-weight="700">🧹 1. DEEP JUNK CLEANER</text>
+    <text x="16" y="88" fill="#94A3B8" font-size="11">Temp • Update Cache • Shaders</text>
+    <text x="16" y="114" fill="#FFFFFF" font-size="13" font-weight="700">Reclaimable: 6.42 GB</text>
+
+    <rect x="312" y="36" width="292" height="110" rx="12" fill="#11161F" stroke="#1E2736" />
+    <text x="328" y="62" fill="#38BDF8" font-size="12" font-weight="700">🚀 2. STARTUP GUARD</text>
+    <text x="328" y="88" fill="#94A3B8" font-size="11">HKCU / HKLM / Startup Folder</text>
+    <text x="328" y="114" fill="#FBBF24" font-size="13" font-weight="700">9 Bloated Apps Disabled</text>
+
+    <rect x="624" y="36" width="298" height="110" rx="12" fill="#11161F" stroke="#1E2736" />
+    <text x="640" y="62" fill="#FBBF24" font-size="12" font-weight="700">⚡ 3. LIVE RAM TRIMMER</text>
+    <rect x="640" y="82" width="248" height="14" rx="7" fill="#1C2432" />
+    <rect class="bar1" x="640" y="82" width="180" height="14" rx="7" fill="#10B981" />
+    <text x="640" y="122" fill="#34D399" font-size="11">EmptyWorkingSet() • -1.8 GB Freed</text>
+
+    
+    <rect x="0" y="164" width="292" height="110" rx="12" fill="#11161F" stroke="#1E2736" />
+    <text x="16" y="190" fill="#A7F3D0" font-size="12" font-weight="700">🎛️ 4. SAFE SPEED TWEAKS</text>
+    <text x="16" y="216" fill="#94A3B8" font-size="11">No Bing Start • Ultimate Power</text>
+    <text x="16" y="242" fill="#34D399" font-size="12" font-weight="700">✓ 8 Tweaks Backed Up in JSON</text>
+
+    <rect x="312" y="164" width="292" height="110" rx="12" fill="#11161F" stroke="#1E2736" />
+    <text x="328" y="190" fill="#38BDF8" font-size="12" font-weight="700">💿 5. OS REPAIR &amp; SSD TRIM</text>
+    <text x="328" y="216" fill="#94A3B8" font-size="11">TRIM • SFC • DISM • Icon Cache</text>
+    <text x="328" y="242" fill="#E2E8F0" font-size="12" font-weight="700">Live Async Console Output</text>
+
+    <rect x="624" y="164" width="298" height="110" rx="12" fill="#0B1E19" stroke="#10B981" />
+    <text x="640" y="190" fill="#34D399" font-size="12" font-weight="700">🛡️ 6. SAFETY NET</text>
+    <text x="640" y="216" fill="#A7F3D0" font-size="11">Windows System Restore Point</text>
+    <text x="640" y="242" fill="#FFFFFF" font-size="12" font-weight="700">+ 1-Click Full Registry Undo</text>
+  </g>
+</svg>
