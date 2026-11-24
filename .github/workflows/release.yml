@@ -1,0 +1,48 @@
+name: Build & Release WinFresh EXE
+
+on:
+  release:
+    types: [published]
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    name: Build WinFresh Studio (.NET 8 Windows x64)
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 8 SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Publish Single-File Windows Executable
+        run: |
+          dotnet publish src/WinFresh/WinFresh.csproj -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true -o ./publish
+
+      - name: Rename Executable
+        shell: pwsh
+        run: |
+          $exe = Get-ChildItem -Path ./publish -Filter *.exe | Select-Object -First 1
+          Copy-Item $exe.FullName -Destination ./publish/winfresh-windows-x64.exe
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: winfresh-windows-x64
+          path: ./publish/winfresh-windows-x64.exe
+
+      - name: Attach to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/') || github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ./publish/winfresh-windows-x64.exe
